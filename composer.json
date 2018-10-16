@@ -1,0 +1,38 @@
+{
+    "name": "vmusca/members",
+    "description": "Member management dependency for Laravel Enso",
+    "keywords": [
+        "laravel-enso",
+        "members",
+        "member-management"
+    ],
+    "type": "library",
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Vasile MUSCA",
+            "email": "vasile.musca@opticnet.ro",
+            "homepage": "https://laravel-enso.com",
+            "role": "Developer"
+        }
+    ],
+    "require": {
+        "php": ">=7.1.0",
+        "laravel-enso/activitylog": "1.1.*",
+        "laravel-enso/core": "3.1.*",
+        "laravel-enso/vuecomponents": "2.5.*"
+    },
+    "autoload": {
+        "psr-4": {
+            "LaravelEnso\\Members\\": "src/"
+        }
+    },
+    "extra": {
+        "laravel": {
+            "providers": [
+                "LaravelEnso\\Members\\AppServiceProvider"
+            ],
+            "aliases": {}
+        }
+    }
+}
